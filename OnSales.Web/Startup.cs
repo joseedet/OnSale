@@ -27,7 +27,8 @@ namespace OnSales.Web
                 cfg.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
             services.AddTransient<ICountriesRepository, CountryRepository>();
-
+            services.AddTransient<IDepartment, DepartmentRepository>();
+            services.AddTransient<ICityRepository, CityRepository>();
             services.AddControllersWithViews();
         }
 

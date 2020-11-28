@@ -10,5 +10,9 @@ namespace OnSales.Web.Repository
         IQueryable<Country> ListCountries();
         Task<Country> GetAllDepartmentAndCities(int id);
         Task<Country> GetCountryDepartment(Department department);
+        Task<Country> GetCountryDepartmentNotNull(Department department);
+        Task<Country> FindByIdAsync(int id);
+
+
     }
 }
